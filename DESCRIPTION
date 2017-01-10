@@ -1,0 +1,12 @@
+Package: rRoad
+Type: Package
+Title: Road Routes
+Version: 0.0.0.9000
+Author: @mfontcada
+Description: Get road distances and routes with R, GraphHopper and OpenStreetMap.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: RCurl,
+  RJSONIO,
+  plyr

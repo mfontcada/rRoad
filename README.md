@@ -6,7 +6,7 @@ Get road distances and routes with R, GraphHopper and OpenStreetMap.
 
 Install rRoad within R with:
 ```r
-devtools::github_install("mfontcada/rRoad")
+devtools::install_github("mfontcada/rRoad")
 ```
 
 And follow the installation instructions from the [INSTALL.md](INSTALL.md) file in this repository.
@@ -21,6 +21,7 @@ Where `spain-latest.osm.pbf` should be the OpenStreetMap data file of your desir
 
 With GraphHopper running, you can get results directly in R:
 ```r
+library(rRoad)
 pontevedra <- c(42.4338555, -8.6743651)
 coruna <- c(43.3618728, -8.4301933)
 roadRoute(from = pontevedra, to = coruna, weighting = "fastest", calc_points = FALSE)
